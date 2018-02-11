@@ -1,0 +1,33 @@
+.main-container {
+    border-radius: 5pt;
+    border-color: black;
+}
+
+.inline-logo {
+    max-width: 25px;
+}
+
+.header-logo {
+    max-width: 35%;
+    margin:20px 0;
+    border: 0 2px;
+}
+
+.tagline {
+    color:crimson;
+}
+
+
+.footer-logo {
+    max-width: 105px;
+    display: block;
+    margin: 55px auto;
+}
+
+.footer {
+    border-top: 2px solid crimson;
+    height: 120px !important;
+    max-height: 120px !important;
+    margin: 15px 0;
+}
+

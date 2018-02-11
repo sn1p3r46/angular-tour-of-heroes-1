@@ -1,0 +1,42 @@
+<div 
+  class="card"
+  [class.card-selected]="hero === selectedHero">
+  <div class="card-body">
+    <div class="containter">
+      <img 
+        src="{{hero.thumb}}"
+        class="hero-thumb rounded-circle"
+        [class.card-selected]="hero === selectedHero"/>
+      <hr> 
+      <h5 [class.card-selected]="hero === selectedHero" class="card-title"><b>{{hero.name | uppercase}}</b></h5>
+      <hr/>
+      <div class="row">
+        <div class="col-4">
+          <b class="card-descriptor">HID</b>
+          <div>{{hero.id}}</div>
+        </div>
+        <div class="col-4">
+          <b class="card-descriptor">Gender</b>
+          <div>{{hero.gender}}</div>
+        </div>
+        <div class="col-4">
+          <b class="card-descriptor">Origin</b>
+          <div>{{hero.origin}}</div>
+        </div>
+        <div class="col-12">
+          <hr>
+        </div>
+        <div class="col-12">
+          <b class="card-descriptor">Description</b>
+          <div class="card-desc">{{hero.desc}}</div>
+        </div>
+      </div>
+      <a *ngIf="edit;" routerLink="/edit/hero/{{hero.id}}">
+        <button type="button" (click)="onEdit(hero)" class="btn btn-outline-danger card-action-btn">Edit</button>
+      </a>
+      <!-- <ng-template #other>
+        <button type="button" (click)="onPut(hero)" class="btn btn-outline-danger card-action-btn">Save</button>
+      </ng-template> -->
+    </div> 
+  </div>
+</div>

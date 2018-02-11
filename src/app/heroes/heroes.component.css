@@ -1,0 +1,9 @@
+.fixed-selected {
+
+    background-color: crimson;
+    color: white;
+    padding: 15px;
+    z-index: 1;
+
+}
+

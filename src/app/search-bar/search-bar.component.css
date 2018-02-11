@@ -1,0 +1,14 @@
+.form-control {
+    color: crimson;
+    box-shadow: none;
+    outline: 0 none;
+    text-align: center;
+}
+
+.form-control:hover{
+    border-color: crimson;
+}
+
+.form-control:focus{
+    border-color: crimson;
+}

@@ -1,0 +1,23 @@
+<div class="fixed-bottom container-fluid msg-wid-container">
+    <div 
+        *ngIf="messageService.messages.length" 
+        class="text-center rounded msg-wid">
+        <h5>
+            <b>Message Service</b>
+        </h5>
+        <div class="pre-scrollable msg-container text-left">
+            <div *ngFor="let msg of messageService.messages">
+                <hr class="no-margin thin"/>
+                <b>Message</b>
+                <br>
+                <i>{{msg}}</i>
+            </div>
+        </div>
+        <button 
+            type="button" 
+            class="btn btn-outline-danger clear-btn"
+            (click)="messageService.clear()">
+            Clear Messages
+        </button>
+    </div>
+</div>

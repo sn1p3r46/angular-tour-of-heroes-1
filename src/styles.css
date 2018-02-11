@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+
+hr {
+    border:none;
+    height: 2px;
+    background-color: crimson;
+    /* color: crimson; */
+    /* border: 1px solid crimson; */
+}

@@ -1,0 +1,21 @@
+<div class="container text-center">
+  <app-search-bar [(search)]="search"></app-search-bar>
+  <div class="row text-center">
+    <div 
+      *ngFor="let hero of heroes | searchFilter : search.value" 
+      (click)="onSelect(hero)" 
+      class="col-sm-12 col-md-6 col-lg-4">
+      <app-hero-detail 
+        [hero]="hero"
+        [selectedHero]="selectedHero"
+        [edit]="edit">
+      </app-hero-detail>
+    </div>
+  </div>
+
+  <div *ngIf="selectedHero" class="fixed-bottom text-center hero-selected">
+    <div class="fixed-selected">
+      Selected Hero: <b>{{selectedHero.name}}</b>
+    </div>
+  </div>
+</div>
