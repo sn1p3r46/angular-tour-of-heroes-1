@@ -6,20 +6,20 @@
         src="{{hero.thumb}}"
         class="hero-thumb rounded-circle"/>
       <hr> 
-      <b><input type="text" [(ngModel)]="hero.name"></b>
+      <b><input class="form-control" type="text" [(ngModel)]="hero.name"></b>
       <hr/>
       <div class="row">
         <div class="col-4">
           <b class="card-descriptor">HID</b>
-          <div><input type="text" class="edit-det" [(ngModel)]="hero.id"></div>
+          <input type="text" class="form-control edit-det" [(ngModel)]="hero.id">
         </div>
         <div class="col-4">
           <b class="card-descriptor">Gender</b>
-          <div><input type="text" class="edit-det" [(ngModel)]="hero.gender"></div>
+          <input type="text" class="form-control edit-det" [(ngModel)]="hero.gender">
         </div>
         <div class="col-4">
           <b class="card-descriptor">Origin</b>
-          <div><input type="text" class="edit-det" [(ngModel)]="hero.origin"></div>
+          <input type="text" class="form-control edit-det" [(ngModel)]="hero.origin">
         </div>
         <div class="col-12">
           <hr>

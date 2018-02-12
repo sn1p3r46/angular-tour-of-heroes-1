@@ -64,7 +64,6 @@ input {
 
 textarea {
     max-width: 450px;
-    width: 450px;
     line-height: 1.245;
 }
 
@@ -85,3 +84,7 @@ input:focus {
 input:hover {
     color: crimson;
 } 
+
+.form-control {
+    margin: 0 auto;
+}

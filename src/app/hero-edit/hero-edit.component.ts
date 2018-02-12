@@ -35,8 +35,7 @@ export class HeroEditComponent implements OnInit {
   
   onPut(hero:Hero):void{
     this.heroService.putHero(hero);
-    console.log("PuttingHero: " + hero.name);
-    this.messageService.add("PuttingHero: " + hero.name)
+    this.messageService.add("SavingHero: " + hero.name)
 
   }
 }

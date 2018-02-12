@@ -7,9 +7,7 @@ export const HEROES: Hero [] = [{
     id:'001',
     gender:'Female',
     origin:'Mars',
-    desc:`The most powerful wind will blow you out of control!
-    The Power of this hero can adapt to his opponent, it generates a power
-    equal to the attack it receives`
+    desc:`The most powerful wind will blow you out of control! The Power of this hero can adapt to his opponent, it generates a power equal to the attack it receives`
 
   },
   {
@@ -19,9 +17,7 @@ export const HEROES: Hero [] = [{
     id:'002',
     gender:'Female',
     origin:'Moon',
-    desc:`The most powerful wind will blow you out of control!
-    The Power of this hero can adapt to his opponent, it generates a power
-    equal to the attack it receives`
+    desc:`The most powerful wind will blow you out of control! The Power of this hero can adapt to his opponent, it generates a power equal to the attack it receives`
 
   },
   {
@@ -31,10 +27,7 @@ export const HEROES: Hero [] = [{
     id:'003',
     gender:'Male',
     origin:'Sun',
-    desc:`The most powerful wind will blow you out of control!
-    The Power of this hero can adapt to his opponent, it generates a power
-    equal to the attack it receives`
-
+    desc:`The most powerful wind will blow you out of control! The Power of this hero can adapt to his opponent, it generates a power equal to the attack it receives`
   },
   {
 
@@ -43,9 +36,7 @@ export const HEROES: Hero [] = [{
     id:'004',
     gender:'Female',
     origin:'Unknown',
-    desc:`The most powerful wind will blow you out of control!
-    The Power of this hero can adapt to his opponent, it generates a power
-    equal to the attack it receives`
+    desc:`The most powerful wind will blow you out of control! The Power of this hero can adapt to his opponent, it generates a power equal to the attack it receives`
 
   },
   {
@@ -55,10 +46,7 @@ export const HEROES: Hero [] = [{
     id:'005',
     gender:'Female',
     origin:'Unknown',
-    desc:`The most powerful wind will blow you out of control!
-    The Power of this hero can adapt to his opponent, it generates a power
-    equal to the attack it receives`
-
+    desc:`The most powerful wind will blow you out of control! The Power of this hero can adapt to his opponent, it generates a power equal to the attack it receives`
   },
   {
 
@@ -67,9 +55,7 @@ export const HEROES: Hero [] = [{
     id:'006',
     gender:'Male',
     origin:'Rome',
-    desc:`The most powerful wind will blow you out of control!
-    The Power of this hero can adapt to his opponent, it generates a power
-    equal to the attack it receives`
+    desc:`The most powerful wind will blow you out of control! The Power of this hero can adapt to his opponent, it generates a power equal to the attack it receives`
 
   },
   {
@@ -79,9 +65,7 @@ export const HEROES: Hero [] = [{
     id:'007',
     gender:'Female',
     origin:'Unknown',
-    desc:`The most powerful wind will blow you out of control!
-    The Power of this hero can adapt to his opponent, it generates a power
-    equal to the attack it receives`
+    desc:`The most powerful wind will blow you out of control! The Power of this hero can adapt to his opponent, it generates a power equal to the attack it receives`
 
   },
   {
@@ -91,8 +75,6 @@ export const HEROES: Hero [] = [{
     id:'008',
     gender:'Male',
     origin:'Massa Martana',
-    desc:`The most powerful wind will blow you out of control!
-    The Power of this hero can adapt to his opponent, it generates a power
-    equal to the attack it receives`
+    desc:`The most powerful wind will blow you out of control! The Power of this hero can adapt to his opponent, it generates a power equal to the attack it receives`
 
   }]
