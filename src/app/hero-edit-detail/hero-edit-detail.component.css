@@ -44,7 +44,7 @@ hr {
 }
 
 .card-desc {
-    margin: 15px 0;
+    margin: 15px auto;
 }
 
 .card-selected {
@@ -63,8 +63,10 @@ input {
 }
 
 textarea {
-    max-width: 450px;
+    margin: 0 auto;
     line-height: 1.245;
+    min-width: 100%;
+    text-align: center;
 }
 
 input {

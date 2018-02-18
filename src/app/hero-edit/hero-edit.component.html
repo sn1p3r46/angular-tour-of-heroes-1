@@ -1,7 +1,5 @@
 <div class="countainer text-center">
-  <a routerLink="/heroes">
-    <button type="button" (click)="onPut(hero)" class="btn btn-outline-dark">Save 'n' Back</button>
-  </a>
+    <button type="button" (click)="goBack()" class="btn btn-outline-dark">Save 'n' Back</button>
   <div class="row">
     <div class="text-center col-sm-12 col-md-12 col-lg-6">
       <app-hero-edit-detail [(hero)]="hero"></app-hero-edit-detail>
@@ -10,7 +8,5 @@
       <app-hero-detail [edit]="edit" [(hero)]="hero"></app-hero-detail>
     </div>
   </div>
-  <a routerLink="/heroes">
-    <button type="button" (click)="onPut(hero)" class="btn btn-outline-dark">Save 'n' Back</button>
-  </a>
+    <button type="button" (click)="goBack()" class="btn btn-outline-dark">Save 'n' Back</button>
 </div>

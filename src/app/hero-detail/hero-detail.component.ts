@@ -17,11 +17,11 @@ export class HeroDetailComponent implements OnInit {
   editingHero:Hero;
   expandingHero:Hero;
 
-  // onEdit(hero:Hero):void{
-  //   this.selectedHero = null;
-  //   this.editingHero = hero;
-  //   console.log("Editing: " + hero.name);
-  // }
+  onEdit(hero:Hero):void{
+    this.selectedHero = null;
+    this.editingHero = hero;
+    console.log("Editing: " + hero.name);
+  }
 
   onExpand(hero:Hero):void{
     this.expandingHero = hero;

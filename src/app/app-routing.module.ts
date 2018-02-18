@@ -7,7 +7,8 @@ import { HeroEditComponent } from './hero-edit/hero-edit.component';
 const routes: Routes = [
   { path: '', redirectTo: '/heroes', pathMatch: 'full' },
   { path: 'heroes', component: HeroesComponent },
-  { path: 'edit/hero/:id', component: HeroEditComponent }
+  { path: 'edit/hero/:id', component: HeroEditComponent },
+  { path: 'edit/hero', component: HeroEditComponent }
 
 ];
 

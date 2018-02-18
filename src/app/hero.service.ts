@@ -20,12 +20,39 @@ export class HeroService {
     return of(hero);
   }
 
+  getNewHID():string {
+    var max = "0"
+    HEROES.forEach(
+      function(el){
+        if (+max < +el.id) {
+          max = el.id;
+        }
+      }
+    )
+    return String(+max+1) 
+  }
+
   putHero(hero:Hero):void{
+    var found : boolean = false
     HEROES.forEach((el) => {
-      if (el.id == hero.id){
+      if (el.id === hero.id){
+
         el=hero;
+        found = true
+
       }
     });
+    console.log("DioCAne");
+    
+    if (found===false) {
+      hero.id = this.getNewHID();
+      HEROES.push(hero)
+      console.log("Pushing", hero);
+      
+    } else {
+      console.log("Found");
+      
+    }
   }
 
   constructor(private messageService:MessageService) { }

@@ -30,12 +30,41 @@ export class HeroEditComponent implements OnInit {
   getHero(): void {
     const id = this.route.snapshot.paramMap.get('id');
     this.heroService.getHero(id)
-      .subscribe(hero => this.hero = hero);
+      .subscribe(hero => {
+        this.handleResult(hero);
+      });
   }
   
+  handleResult(hero:Hero) :void {
+
+    if (hero === undefined) {
+      this.hero = new Hero();
+      this.hero.thumb = "https://picsum.photos/500/500/?image=233"
+      this.hero.name = "Hero Name";
+      this.hero.id = ""
+      this.hero.gender = "Hero Gender";
+      this.hero.origin = "Origin";
+      this.hero.desc = "Insert Description";
+    } else {
+
+      this.hero = hero;
+    
+    }
+    
+
+  }
+
   onPut(hero:Hero):void{
+
     this.heroService.putHero(hero);
     this.messageService.add("SavingHero: " + hero.name)
 
+  }
+
+  goBack() {
+    console.log("goBakc Called");
+    
+    this.onPut(this.hero)
+    this.location.back();
   }
 }
