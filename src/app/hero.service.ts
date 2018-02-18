@@ -42,16 +42,11 @@ export class HeroService {
 
       }
     });
-    console.log("DioCAne");
     
     if (found===false) {
       hero.id = this.getNewHID();
       HEROES.push(hero)
       console.log("Pushing", hero);
-      
-    } else {
-      console.log("Found");
-      
     }
   }
 
